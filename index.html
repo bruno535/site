@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<title>Bruno Portifolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./index.css">
+<body>
+
+<!-- container (nav) -->
+<div id="mario"class="mario" >
+  <div id="begin" class="begin beginId" onclick="BeginEnd()">
+    <h1 class="button">VAMOS COMEÇAR</h1>
+  </div>
+</div>
+
+<nav id="nav">
+  <h2 id="inicio" class="button" onclick="Inicio()">INICIO</h2>
+  <H2 id="sobre" class="button" onclick="About()">SOBRE</H2>
+  <h2 id="portifolio" class="button" onclick="Portfolio()">PORTIFOLIO</h2>
+  <h2 id="contato" class="button" onclick="Contato()" >CONTATO</h2>
+</nav>
+
+<!-- container (About) -->
+<section id="about">
+  <div id="voltar" onclick="Voltar()">
+    <h1 class="button">VOLTAR</h1>
+  </div>
+  
+  <h3 class="title">SOBRE MIM</h3>
+
+  <p class="text"><em>Um apaixonado por tecnologia</em></p>
+
+  <p class="text">Estudante de Sistemas de Informação pela Estácio, que tem como hobby criar websites/blogs, 
+    que busca por conhecimento sempre que possivel.<br> Sou Front-end porem busco me tornar Fullstack.<br>
+    Fiz alguns Bootcamps pela Dio( Digital Innovation One ), do MRV, DecolaTech 1 e 2, e do 
+    banco Inter. 
+  </p>
+
+  <div>
+      <p class="text"><b>BRUNO HENRIQUE SILVA</b></p><br>
+      <img src="./assets/rosto.jpg" class="img-me" alt="img-me">
+  </div>
+
+  <div id="bom" onclick="img()">
+    <h2 class="button">NO QUE SOU BOM:</h2>
+  </div>
+
+  
+
+</section>
+
+<div class="text souBom">
+  <p class="react"></p>
+  <p class="vue"></p>
+  <p class="bootstrap"></p>
+  <p class="c"></p>
+  <p class="dotnet"></p>
+  <p class="word"></p>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<section id="portfolio">
+  
+  <div class="voltar2" onclick="Voltar2()">
+    <h1 class="button">Voltar</h1>
+  </div>
+
+  <h3 class="title">MEUS TRABALHOS</h3>
+
+  <p class="text"><em>Esses são alguns dos meus tralalhos pessoais</p><br>
+
+  <div class="projects">
+    <div class="pj">
+      <a href="https://github.com/bruno535/firstGame"><img class="imgP" src="./assets/first-game.svg"></a>
+      <p class="text proj">jogo de nave</p>
+    </div>
+
+    <div class="pj">
+      <a href="https://github.com/bruno535/naruto-frases-de-personagens"><img class="imgP"src="./assets/naruto-frases.svg"></a>
+      <p class="text proj">gerador de frases</p>
+    </div>
+
+    <div class="pj">
+      <a href="https://github.com/bruno535/netflix-clone"><img class="imgP" src="./assets/netflix.svg"></a>
+      <p class="text proj">copia da netflix</p>
+    </div>
+
+    <div class="pj">
+      <a href="https://github.com/bruno535/calculator"><img class="imgP" src="./assets/saSD.png"></a>
+      <p class="text proj">calculadora</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- Container (Contact Section) -->
+<section id="contact">
+  <div class="voltar3" onclick="Voltar3()">
+    <h2 class="button">VOLTAR</h2>
+  </div>
+
+  <h3 class="title">CONTATO</h3>
+
+  <p class="text"><em>Caso tenha algum feedback sobre meus projetos, dicas ou somente queira conversar 
+    comigo me chame!</em></p>
+
+  <div> 
+    </div>
+
+    <div class="text">
+      <div class="box-contact">
+        <i class="fa fa-map-marker fa-fw"></i> Mauá - SP<br>
+        <i class="fa fa-phone fa-fw"></i> Celular: (11)93475-7388 (whatsapp)<br>
+        <a class="text" href="https://github.com/bruno535">github.com/bruno535</a>
+        <a class="text" href="mailto:bruno.henriqueds@outlook.com.br"><i class="fa fa-envelope fa-fw"></i> Email: bruno.henriqueds@outlook.com.br<br></a>
+      </div>
+
+      <p>Se quiser tomar um <i class="fa fa-coffee"></i>, ou mandar uma mensagem:</p>
+    </div>
+  </div>
+</section>
+
+<script src="./index.js"></script>
+</body>
+</html>

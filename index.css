@@ -1,0 +1,204 @@
+body,
+html {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+.text {
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+}
+.button {
+  background-color: #00000080;
+  padding: 5px 20px;
+  border-radius: 0 20px;
+  color: #fc516e;
+}
+/* ---------------------- begin -------------------*/
+.begin {
+  position: absolute;
+  left: 4vw;
+  top: 50vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  right: 4vw;
+}
+@keyframes end {
+  0% {
+    filter: opacity(1);
+  }
+  100% {
+    filter: opacity(0);
+  }
+}
+.end {
+  animation: 2s end ease;
+}
+/* ---------------------- Nav ---------------------------*/
+#nav {
+  display: none;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30vh;
+  left: 4vw;
+  right: 4vw;
+}
+/* ------------------------- About ---------------------- */
+#about {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 10vh;
+  bottom: 10vh;
+  left: 15vw;
+  right: 15vw;
+  background-color: #00000096;
+  border-radius: 100px;
+}
+.Begin {
+  animation: 2s Begin ease;
+}
+@keyframes Begin {
+  0% {
+    filter: opacity(0);
+  }
+  100% {
+    filter: opacity(1);
+  }
+}
+.img-me {
+  border-radius: 5em;
+  height: 20vh;
+}
+.img-meAnimation {
+  animation: 2s img-me ease;
+}
+.title {
+  color: white;
+}
+.souBom {
+  flex-direction: row;
+  position: absolute;
+  top: 60vh;
+  left: 20vw;
+  right: 20vw;
+  line-height: 1;
+  justify-content: center;
+}
+@keyframes img-me {
+  0% {
+    filter: opacity(1);
+  }
+  100% {
+    filter: opacity(0);
+  }
+}
+/* ------------------- parallax ----------------------- */
+.mario {
+  background-image: url('./assets/lol.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+/* ---------------------- portifolio -------------------------*/
+#portfolio {
+  display: none;
+  background-color: #00000096;
+  border-radius: 5em;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  top: 10vh;
+  bottom: 10vh;
+  left: 15vw;
+  right: 15vw;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.voltar2 {
+  top: 0;
+  left: 41vw;
+}
+.imgP {
+  width: 18vw;
+  margin: 0 10px;
+  cursor: pointer;
+  box-shadow: 6px 6px rgba(0, 0, 0, 0.377);
+}
+.pj a img:hover {
+  filter: brightness(0.7);
+}
+.pj > p {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*---------------- contato -----------------------*/
+#contact {
+  display: none;
+  position: absolute;
+  background-color: #00000096;
+  border-radius: 5em;
+  top: 10vh;
+  bottom: 10vh;
+  left: 15vw;
+  right: 15vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media(max-width:600px) {
+  #about{
+    top: 5vh;
+    bottom: 5vh;
+    left: 5vw;
+    right: 5vw;
+  }
+  .text{
+    font-size: 13px;
+  }
+  .title{
+    font-size: 15px;
+  }
+  .button{
+    font-size: 17px;
+  }
+  #portfolio{
+    top: 5vh;
+    bottom: 5vh;
+    left: 5vw;
+    right: 5vw;
+  }
+  #contact{
+    top: 5vh;
+    bottom: 5vh;
+    left: 5vw;
+    right: 5vw;
+  }
+  .projects{
+    flex-direction: column;
+  }
+  .proj{
+    display:none;
+  }
+  .imgP{
+    width: 55vw;
+  }
+}
